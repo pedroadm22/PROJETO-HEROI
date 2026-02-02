@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Web HERO - Contato</title>
+</head>
+<body>
+    <header>
+        <h1>🦸 Academia Web HERO</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h2>Bem-vindo à Academia Web HERO</h2>
+            <p>Aprenda desenvolvimento web de forma gamificada!</p>
+        </article>
+        
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form action="/enviar" method="POST">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required minlength="3">
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione...</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="suporte">Suporte</option>
+                    </select>
+                    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </fieldset>
+                
+                <label>
+                    <input type="checkbox" name="termos" required>
+                    Aceito os termos e condições
+                </label>
+                
+                <button type="submit">Enviar Mensagem</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2026 Academia Web HERO | cursos.x4trend.com</p>
+    </footer>
+</body>
+</html>
